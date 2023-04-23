@@ -1,4 +1,45 @@
+:root {
+  --text-white: hsl(0, 0%, 100%);
+
+  --one-text-blue: hsl(221, 14%, 31%);
+  --one-screen-background: hsl(224, 36%, 15%);
+  --one-main-background: hsl(222, 26%, 31%);
+  --one-toggle-background: hsl(223, 31%, 20%);
+  --one-red: hsl(6, 63%, 50%);
+  --one-dark-red: hsl(6, 70%, 34%);
+  --one-light-orange: hsl(30, 25%, 89%);
+  --one-orange: hsl(28, 16%, 65%);
+
+  --two-text-yellow: hsl(60, 10%, 19%);
+  --two-screen-background: hsl(0, 0%, 93%);
+  --two-main-background: hsl(0, 0%, 90%);
+  --two-toggle-background: hsl(0, 5%, 81%);
+  --two-orange: hsl(25, 98%, 40%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
+  padding: 20px;
   font-family: sans-serif;
   text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.theme-one {
+  color: var(--text-white);
+  background-color: var(--one-screen-background);
+}
+
+.theme-two {
+  color: var(--two-text-yellow);
+  background-color: var(--two-screen-background);
 }
