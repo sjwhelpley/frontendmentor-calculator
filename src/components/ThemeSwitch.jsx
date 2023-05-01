@@ -4,16 +4,15 @@ import "./ThemeSwitch.css";
 
 export default function ThemeSwitch() {
   const { theme, toggleTheme } = useContext(ThemeContext);
-
+  console.log(theme);
   var buttons = document.getElementsByClassName("button");
   var arr = [...buttons];
-
+  console.log(theme);
   // set starting input based on theme
-
-  // https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/
-  arr.forEach((element, index) => {
-    element.addEventListener("click", () => {
-      element.style.opacity = "1";
+  React.useEffect(() => {
+    const clickToggle = (elem, index) => {
+      console.log("here");
+      elem.style.opacity = "1";
 
       if (index == 0) {
         toggleTheme("theme-one");
@@ -25,13 +24,23 @@ export default function ThemeSwitch() {
 
       arr
         .filter(function (item) {
-          return item != element;
+          return item != elem;
         })
         .forEach((item) => {
           item.style.opacity = "0";
         });
+    };
+
+    // https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/
+    arr.forEach((element, index) => {
+      element.addEventListener("click", () => clickToggle(element, index));
     });
-  });
+
+    return () =>
+      arr.forEach((element, index) => {
+        element.removeEventListener("click", () => clickToggle(element, index));
+      });
+  }, []);
 
   return (
     <div className="container">

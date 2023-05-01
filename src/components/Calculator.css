@@ -1,0 +1,92 @@
+.calc {
+  max-width: 800px;
+}
+
+.solution-container {
+  border-radius: 20px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.theme-one .solution-container,
+.theme-one .keys-container {
+  background-color: var(--one-toggle-background);
+}
+
+.theme-two .solution-container,
+.theme-two .keys-container {
+  background-color: var(--two-toggle-background);
+}
+
+.theme-three .solution-container,
+.theme-three .keys-container {
+  background-color: var(--three-main-background);
+}
+
+.keys-container {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  font-size: 2rem;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.key {
+  width: 95%;
+  height: 75px;
+  border-radius: 20px;
+  font-size: 2rem;
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  font-weight: 700;
+}
+
+.theme-one .num-key {
+  background-color: var(--one-light-orange);
+  border-bottom: 4px solid var(--one-orange);
+  color: var(--one-text-blue);
+}
+
+.theme-two .num-key {
+  background-color: var(--two-light-grey-yellow);
+  border-bottom: 4px solid var(--two-dark-greyish-yellow);
+  color: var(--two-dark-greyish-yellow);
+}
+
+.theme-three .num-key {
+  background-color: var(--three-dark-violet);
+  border-bottom: 4px solid var(--three-vivid-magenta);
+  color: var(--three-text-yellow);
+}
+
+.theme-one .delete-key,
+.theme-one .reset-key {
+  background-color: var(--one-blue-key-background);
+  border-bottom: 4px solid var(--one-blue-key-shadow);
+  color: var(--text-white);
+}
+
+.theme-two .delete-key {
+  background-color: var(--two-light-grey-yellow);
+  border-bottom: 4px solid var(--two-dark-greyish-yellow);
+  color: var(--two-dark-greyish-yellow);
+}
+
+.theme-three .delete-key {
+  background-color: var(--three-dark-violet);
+  border-bottom: 4px solid var(--three-vivid-magenta);
+  color: var(--three-text-white);
+}

@@ -57,8 +57,8 @@ input:hover {
 }
 
 .theme-three input {
-  background-color: var(--one-red);
+  background-color: var(--three-toggle);
 }
 .theme-three .toggle-container {
-  background-color: var(--one-toggle-background);
+  background-color: var(--three-main-background);
 }

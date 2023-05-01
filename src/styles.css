@@ -9,23 +9,37 @@
   --one-dark-red: hsl(6, 70%, 34%);
   --one-light-orange: hsl(30, 25%, 89%);
   --one-orange: hsl(28, 16%, 65%);
+  --one-blue-key-background: hsl(225, 21%, 49%);
+  --one-blue-key-shadow: hsl(224, 28%, 35%);
 
   --two-text-yellow: hsl(60, 10%, 19%);
   --two-screen-background: hsl(0, 0%, 93%);
   --two-main-background: hsl(0, 0%, 90%);
   --two-toggle-background: hsl(0, 5%, 81%);
   --two-orange: hsl(25, 98%, 40%);
+  --two-light-grey-yellow: hsl(45, 7%, 89%);
+  --two-dark-greyish-yellow: hsl(35, 11%, 61%);
+
+  --three-text-yellow: hsl(52, 100%, 62%);
+  --three-screen-background: hsl(268, 75%, 9%);
+  --three-main-background: hsl(268, 71%, 12%);
+  --three-toggle: hsl(176, 100%, 44%);
+  --three-dark-violet: hsl(281, 89%, 26%);
+  --three-vivid-magenta: hsl(285, 91%, 52%);
 }
 
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
 }
 
 .App {
   padding: 20px;
   font-family: sans-serif;
   text-align: center;
+  height: 100vh;
 }
 
 .header {
@@ -42,4 +56,9 @@ body {
 .theme-two {
   color: var(--two-text-yellow);
   background-color: var(--two-screen-background);
+}
+
+.theme-three {
+  color: var(--three-text-yellow);
+  background-color: var(--three-screen-background);
 }
