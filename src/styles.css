@@ -17,8 +17,11 @@
   --two-main-background: hsl(0, 0%, 90%);
   --two-toggle-background: hsl(0, 5%, 81%);
   --two-orange: hsl(25, 98%, 40%);
+  --two-dark-orange: hsl(25, 99%, 27%);
   --two-light-grey-yellow: hsl(45, 7%, 89%);
   --two-dark-greyish-yellow: hsl(35, 11%, 61%);
+  --two-dark-cyan: hsl(185, 42%, 37%);
+  --two-very-dark-cyan: hsl(185, 58%, 25%);
 
   --three-text-yellow: hsl(52, 100%, 62%);
   --three-screen-background: hsl(268, 75%, 9%);
@@ -55,7 +58,7 @@ body {
 
 .theme-two {
   color: var(--two-text-yellow);
-  background-color: var(--two-screen-background);
+  background-color: var(--two-main-background);
 }
 
 .theme-three {

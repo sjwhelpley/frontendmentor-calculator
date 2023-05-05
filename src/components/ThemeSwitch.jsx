@@ -4,14 +4,10 @@ import "./ThemeSwitch.css";
 
 export default function ThemeSwitch() {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log(theme);
-  var buttons = document.getElementsByClassName("button");
-  var arr = [...buttons];
-  console.log(theme);
+
   // set starting input based on theme
   React.useEffect(() => {
     const clickToggle = (elem, index) => {
-      console.log("here");
       elem.style.opacity = "1";
 
       if (index == 0) {
@@ -30,6 +26,9 @@ export default function ThemeSwitch() {
           item.style.opacity = "0";
         });
     };
+
+    var buttons = document.getElementsByClassName("button");
+    var arr = [...buttons];
 
     // https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/
     arr.forEach((element, index) => {

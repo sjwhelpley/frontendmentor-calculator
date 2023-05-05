@@ -18,9 +18,11 @@
   background-color: var(--one-toggle-background);
 }
 
-.theme-two .solution-container,
 .theme-two .keys-container {
   background-color: var(--two-toggle-background);
+}
+.theme-two {
+  background-color: hsl(0, 0%, 93%);
 }
 
 .theme-three .solution-container,
@@ -40,7 +42,6 @@
 }
 
 .key {
-  width: 95%;
   height: 75px;
   border-radius: 20px;
   font-size: 2rem;
@@ -52,6 +53,30 @@
   border-top: none;
   border-right: none;
   font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.equal-key {
+  grid-column: span 2;
+}
+
+.theme-one .equal-key {
+  background-color: var(--one-red);
+  border-bottom: 4px solid var(--one-dark-red);
+  color: var(--text-white);
+}
+
+.theme-two .equal-key {
+  background-color: var(--two-orange);
+  border-bottom: 4px solid var(--two-dark-orange);
+  color: var(--text-white);
+}
+
+.theme-three .equal-key {
+  background-color: var(--three-toggle);
+  border-bottom: 4px solid hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
 }
 
 .theme-one .num-key {
@@ -63,13 +88,17 @@
 .theme-two .num-key {
   background-color: var(--two-light-grey-yellow);
   border-bottom: 4px solid var(--two-dark-greyish-yellow);
-  color: var(--two-dark-greyish-yellow);
+  color: var(--two-text-yellow);
 }
 
 .theme-three .num-key {
-  background-color: var(--three-dark-violet);
-  border-bottom: 4px solid var(--three-vivid-magenta);
+  background-color: hsl(268, 47%, 21%);
+  border-bottom: 4px solid hsl(290, 70%, 36%);
   color: var(--three-text-yellow);
+}
+
+.reset-key {
+  grid-column: span 2;
 }
 
 .theme-one .delete-key,
@@ -79,14 +108,16 @@
   color: var(--text-white);
 }
 
-.theme-two .delete-key {
-  background-color: var(--two-light-grey-yellow);
-  border-bottom: 4px solid var(--two-dark-greyish-yellow);
-  color: var(--two-dark-greyish-yellow);
+.theme-two .delete-key,
+.theme-two .reset-key {
+  background-color: var(--two-dark-cyan);
+  border-bottom: 4px solid var(--two-very-dark-cyan);
+  color: var(--text-white);
 }
 
-.theme-three .delete-key {
-  background-color: var(--three-dark-violet);
+.theme-three .delete-key,
+.theme-three .reset-key {
+  background-color: hsl(281, 89%, 26%);
   border-bottom: 4px solid var(--three-vivid-magenta);
-  color: var(--three-text-white);
+  color: var(--text-white);
 }
