@@ -95,7 +95,9 @@ export default function Calculator() {
   return (
     <div className="calc">
       <div className="solution-container">
-        <p>{calc.num ? calc.num : calc.res}</p>
+        <p>
+          {calc.num ? calc.num.toLocaleString() : calc.res.toLocaleString()}
+        </p>
       </div>
 
       <div className="keys-container">
@@ -111,7 +113,7 @@ export default function Calculator() {
                   : typeof btn === "number"
                   ? "num-key"
                   : btn === "="
-                  ? "equal-key num-key"
+                  ? "equal-key"
                   : "num-key"
               }
               value={btn}

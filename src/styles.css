@@ -34,8 +34,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "League Spartan", sans-serif;
-  font-weight: 700;
 }
 
 .App {
@@ -43,6 +41,15 @@ body {
   font-family: sans-serif;
   text-align: center;
   height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+
+.app-container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .header {
@@ -58,7 +65,7 @@ body {
 
 .theme-two {
   color: var(--two-text-yellow);
-  background-color: var(--two-main-background);
+  background-color: var(--two-screen-background);
 }
 
 .theme-three {
