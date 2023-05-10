@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.theme-label {
+  margin-right: 20px;
+}
+.label-container {
+  display: flex;
+  width: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.switch-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label {
+  margin: 0px;
+}
+input {
+  height: 30px;
+  width: 30px;
+  appearance: none;
+  border-radius: 50%;
+  opacity: 0;
+  margin: 5px 0px;
+}
+input:hover {
+  cursor: pointer;
+}
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  width: 100px;
+}
+#one {
+  opacity: 1;
+}
+
+/* THEMES */
+.theme-one input {
+  background-color: var(--one-red);
+}
+.theme-one .toggle-container {
+  background-color: var(--one-toggle-background);
+}
+
+.theme-two input {
+  background-color: var(--two-orange);
+}
+.theme-two .toggle-container {
+  background-color: var(--two-toggle-background);
+}
+
+.theme-three input {
+  background-color: var(--three-toggle);
+}
+.theme-three .toggle-container {
+  background-color: var(--three-main-background);
+}
