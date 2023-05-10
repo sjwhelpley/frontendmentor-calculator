@@ -11,11 +11,13 @@ export default function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <div className="header">
-        <h1>calc</h1>
-        <ThemeSwitch />
+      <div className="app-container">
+        <div className="header">
+          <h1>calc</h1>
+          <ThemeSwitch />
+        </div>
+        <Calculator />
       </div>
-      <Calculator />
     </div>
   );
 }
