@@ -3,7 +3,7 @@
 }
 
 .solution-container {
-  border-radius: 20px;
+  border-radius: 10px;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -13,16 +13,18 @@
   font-size: 2rem;
 }
 
-.theme-one .solution-container,
 .theme-one .keys-container {
   background-color: var(--one-toggle-background);
+}
+.theme-one .solution-container {
+  background-color: var(--one-screen-background);
 }
 
 .theme-two .keys-container {
   background-color: var(--two-toggle-background);
 }
 .theme-two .solution-container {
-  background-color: var(--two-main-background);
+  background-color: var(--two-screen-background);
 }
 
 .theme-three .solution-container,
@@ -31,28 +33,28 @@
 }
 
 .keys-container {
-  border-radius: 20px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
-  font-size: 2rem;
   margin-top: 20px;
   padding: 20px;
 }
 
+@media (max-width: 800px) {
+  .keys-container {
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+}
+
 .key {
   height: 75px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 2rem;
-  display: grid;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  border-left: none;
-  border-top: none;
-  border-right: none;
-  font-weight: 700;
+  border: none;
   cursor: pointer;
   width: 100%;
   font-family: "League Spartan", sans-serif;
@@ -69,16 +71,28 @@
   color: var(--text-white);
 }
 
+.theme-one .equal-key:active {
+  background-color: #f96c5b;
+}
+
 .theme-two .equal-key {
   background-color: var(--two-orange);
   border-bottom: 4px solid var(--two-dark-orange);
   color: var(--text-white);
 }
 
+.theme-two .equal-key:active {
+  background-color: #ff8b38;
+}
+
 .theme-three .equal-key {
   background-color: var(--three-toggle);
-  border-bottom: 4px solid hsl(177, 92%, 70%);
-  color: hsl(198, 20%, 13%);
+  border-bottom: 4px solid var(--three-light-blue);
+  color: var(--three-blue);
+}
+
+.theme-three .equal-key:active {
+  background-color: #94fff9;
 }
 
 .theme-one .num-key {
@@ -87,16 +101,28 @@
   color: var(--one-text-blue);
 }
 
+.theme-one .num-key:active {
+  background-color: #ffffff;
+}
+
 .theme-two .num-key {
   background-color: var(--two-light-grey-yellow);
   border-bottom: 4px solid var(--two-dark-greyish-yellow);
   color: var(--two-text-yellow);
 }
 
+.theme-two .num-key:active {
+  background-color: #ffffff;
+}
+
 .theme-three .num-key {
-  background-color: hsl(268, 47%, 21%);
-  border-bottom: 4px solid hsl(290, 70%, 36%);
+  background-color: var(--three-num-background);
+  border-bottom: 4px solid var(--three-num-shadow);
   color: var(--three-text-yellow);
+}
+
+.theme-three .num-key:active {
+  background-color: #6b34ac;
 }
 
 .reset-key {
@@ -110,6 +136,11 @@
   color: var(--text-white);
 }
 
+.theme-one .delete-key:active,
+.theme-one .reset-key:active {
+  background-color: #a2b3e1;
+}
+
 .theme-two .delete-key,
 .theme-two .reset-key {
   background-color: var(--two-dark-cyan);
@@ -117,9 +148,19 @@
   color: var(--text-white);
 }
 
+.theme-two .delete-key:active,
+.theme-two .reset-key:active {
+  background-color: #62b5bd;
+}
+
 .theme-three .delete-key,
 .theme-three .reset-key {
-  background-color: hsl(281, 89%, 26%);
+  background-color: var(--three-dark-violet);
   border-bottom: 4px solid var(--three-vivid-magenta);
   color: var(--text-white);
+}
+
+.theme-three .delete-key:active,
+.theme-three .reset-key:active {
+  background-color: #8631b0;
 }

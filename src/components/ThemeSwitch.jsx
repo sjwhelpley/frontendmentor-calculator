@@ -30,6 +30,15 @@ export default function ThemeSwitch() {
     var buttons = document.getElementsByClassName("button");
     var arr = [...buttons];
 
+    // Set initial toggle on render
+    if (theme === "theme-one") {
+      arr[0].style.opacity = "1";
+    } else if (theme === "theme-two") {
+      arr[1].style.opacity = "1";
+    } else {
+      arr[2].style.opacity = "1";
+    }
+
     // https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/
     arr.forEach((element, index) => {
       element.addEventListener("click", () => clickToggle(element, index));

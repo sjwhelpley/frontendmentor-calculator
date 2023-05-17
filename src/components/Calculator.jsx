@@ -93,7 +93,7 @@ export default function Calculator() {
   };
 
   return (
-    <div className="calc">
+    <section className="calc">
       <div className="solution-container">
         <p>
           {calc.num ? calc.num.toLocaleString() : calc.res.toLocaleString()}
@@ -132,6 +132,6 @@ export default function Calculator() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
