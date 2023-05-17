@@ -10,14 +10,14 @@ export default function App() {
   useEffect(() => {}, [theme]);
 
   return (
-    <div className={`App ${theme}`}>
-      <div className="app-container">
-        <div className="header">
+    <main className={`App ${theme}`}>
+      <section className="app-container">
+        <header className="header">
           <h1>calc</h1>
           <ThemeSwitch />
-        </div>
+        </header>
         <Calculator />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
