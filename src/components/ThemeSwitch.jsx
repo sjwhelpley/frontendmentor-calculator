@@ -52,9 +52,27 @@ export default function ThemeSwitch() {
         </div>
 
         <div className="toggle-container">
-          <input className="button" type="radio" name="toggle" id="one" />
-          <input className="button" type="radio" name="toggle" id="two" />
-          <input className="button" type="radio" name="toggle" id="three" />
+          <input
+            className="button"
+            type="radio"
+            name="toggle"
+            id="one"
+            aria-label="Theme 1"
+          />
+          <input
+            className="button"
+            type="radio"
+            name="toggle"
+            id="two"
+            aria-label="Theme 2"
+          />
+          <input
+            className="button"
+            type="radio"
+            name="toggle"
+            id="three"
+            aria-label="Theme 3"
+          />
         </div>
       </div>
     </div>

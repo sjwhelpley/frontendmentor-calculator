@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .theme-one .solution-container,
@@ -36,7 +36,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 20px;
   column-gap: 20px;
-  font-size: 2rem;
   margin-top: 20px;
   padding: 20px;
 }
@@ -57,6 +56,10 @@
   width: 100%;
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
+}
+
+.num-key {
+  font-size: 2.5rem;
 }
 
 .equal-key {
