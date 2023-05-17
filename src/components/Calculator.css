@@ -68,21 +68,21 @@
 .theme-one .equal-key {
   background-color: var(--one-red);
   border-bottom: 4px solid var(--one-dark-red);
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .theme-one .equal-key:active {
-  background-color: #f96c5b;
+  background-color: var(--one-equal-active);
 }
 
 .theme-two .equal-key {
   background-color: var(--two-orange);
   border-bottom: 4px solid var(--two-dark-orange);
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .theme-two .equal-key:active {
-  background-color: #ff8b38;
+  background-color: var(--two-equal-active);
 }
 
 .theme-three .equal-key {
@@ -92,7 +92,7 @@
 }
 
 .theme-three .equal-key:active {
-  background-color: #94fff9;
+  background-color: var(--three-equal-active);
 }
 
 .theme-one .num-key {
@@ -102,7 +102,7 @@
 }
 
 .theme-one .num-key:active {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .theme-two .num-key {
@@ -112,7 +112,7 @@
 }
 
 .theme-two .num-key:active {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .theme-three .num-key {
@@ -122,7 +122,7 @@
 }
 
 .theme-three .num-key:active {
-  background-color: #6b34ac;
+  background-color: var(--three-num-active);
 }
 
 .reset-key {
@@ -133,34 +133,34 @@
 .theme-one .reset-key {
   background-color: var(--one-blue-key-background);
   border-bottom: 4px solid var(--one-blue-key-shadow);
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .theme-one .delete-key:active,
 .theme-one .reset-key:active {
-  background-color: #a2b3e1;
+  background-color: var(--one-del-active);
 }
 
 .theme-two .delete-key,
 .theme-two .reset-key {
   background-color: var(--two-dark-cyan);
   border-bottom: 4px solid var(--two-very-dark-cyan);
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .theme-two .delete-key:active,
 .theme-two .reset-key:active {
-  background-color: #62b5bd;
+  background-color: var(--two-del-active);
 }
 
 .theme-three .delete-key,
 .theme-three .reset-key {
   background-color: var(--three-dark-violet);
   border-bottom: 4px solid var(--three-vivid-magenta);
-  color: var(--text-white);
+  color: var(--white);
 }
 
 .theme-three .delete-key:active,
 .theme-three .reset-key:active {
-  background-color: #8631b0;
+  background-color: var(--three-del-active);
 }
