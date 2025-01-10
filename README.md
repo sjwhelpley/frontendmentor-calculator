@@ -1,6 +1,6 @@
 # Frontend Mentor - Calculator app solution
 
-This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -9,12 +9,8 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Useful resources](#useful-resource)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -37,21 +33,14 @@ Users should be able to:
 
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-
-### What I learned
-
-### Continued development
 
 ### Useful resources
 
 - [https://www.sitepoint.com/react-tutorial-build-calculator-app/](https://www.sitepoint.com/react-tutorial-build-calculator-app/) - This helped me with creating the calculator functionality.
 - [https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/](https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/)
 
-
 ## Author
 
 - Website - [Samantha Whelpley](https://www.samwhelpley.me)
 - Frontend Mentor - [@sjwhelpley](https://www.frontendmentor.io/profile/sjwhelpley)
-- Twitter - [@samc0des](https://www.twitter.com/samc0des)

@@ -1,11 +1,7 @@
 {
-  "name": "react",
+  "name": "frontendmentor-calculator",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "FrontendMentor Calculator",
   "main": "src/index.js",
   "dependencies": {
     "loader-utils": "3.2.1",
