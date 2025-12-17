@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://frontendmaster-calculator.netlify.app/](https://frontendmaster-calculator.netlify.app/)
+- Live Site URL: [https://frontendmentor-calculator-app-chi.vercel.app/](https://frontendmentor-calculator-app-chi.vercel.app/)
 
 ## My process
 
